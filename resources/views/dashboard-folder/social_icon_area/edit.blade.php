@@ -1,7 +1,7 @@
 @extends('master-page.dashboard_master')
 
 @section('title_bar')
-    Education Part
+    Social Icon Part
 @endsection
 
 @section('main_content')

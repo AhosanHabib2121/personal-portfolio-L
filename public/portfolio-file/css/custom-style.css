@@ -1,0 +1,30 @@
+/*------Some of project link area style -----------*/
+.project_link_area{
+    padding-top: 20px;
+}
+.project_link_area h2{
+    margin-bottom: 0;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+}
+/* project_link */
+.project_link{
+    padding: 20px;
+}
+/* project_name_style */
+.project_name_style{
+    color: #100f0f;
+    font-weight: 500;
+    font-size: 15px;
+}
+/* project_link_style */
+.project_link_style a{
+    color: #100f0f;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+.project_link_style a:hover{
+    color: #e9d239;
+}

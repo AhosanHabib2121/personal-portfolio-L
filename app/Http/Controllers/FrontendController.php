@@ -17,6 +17,7 @@ use App\Models\Portfolio_area;
 use App\Models\Self_information;
 use App\Models\Services_area;
 use App\Models\Social_icons;
+use App\Models\Someprojectlink;
 use App\Models\Testimonial_area;
 use Illuminate\Http\Request;
 
@@ -33,6 +34,7 @@ class FrontendController extends Controller
             'services_all_data'=>Services_area::latest()->get(),
             'education_all_data'=>Education_part::latest()->get(),
             'experiance_all_data'=>Experiance_part::latest()->get(),
+            'someprojectlink_all_data'=>Someprojectlink::latest()->get(),
             'design_skills_all_data'=>Design_skills::all(),
             'develop_skills_all_data'=>Develop_skills::all(),
             'hire_text_update_data'=>Hire_text::first(),

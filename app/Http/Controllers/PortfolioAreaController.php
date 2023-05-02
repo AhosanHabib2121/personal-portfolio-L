@@ -17,7 +17,7 @@ class PortfolioAreaController extends Controller
         $this->middleware('auth');
     }
     // middleware code use end here
-    
+
     /**
      * Display a listing of the resource.
      *

@@ -19,6 +19,7 @@ use App\Http\Controllers\PortfolioAreaController;
 use App\Http\Controllers\Skills_areaController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\CvdownloadController;
+use App\Http\Controllers\SomeprojectlinkController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -94,6 +95,12 @@ Route::resource('experiance',ExperiancePartController::class);
 Route::get('experiance/restore/{id}', [ExperiancePartController::class, 'experiance_restore'])->name('experiance_restore');
 Route::get('experiance/force/delete/{id}', [ExperiancePartController::class, 'experiance_force_delete'])->name('experiance_force_delete');
 // ExperiancePartController route end
+
+// SomeprojectlinkController route start
+Route::resource('some_project',SomeprojectlinkController::class);
+Route::get('project/some_data/restore/{id}', [SomeprojectlinkController::class, 'project_some_data_restore'])->name('project_some_data.restore');
+Route::get('project/some_data/force/delete/{id}', [SomeprojectlinkController::class, 'project_some_data_force_delete'])->name('project_some_data_force.delete');
+// SomeprojectlinkController route end
 
 // Skills_areaController route start
 Route::get('skills/create', [Skills_areaController::class, 'skills_create'])->name('skills_create');

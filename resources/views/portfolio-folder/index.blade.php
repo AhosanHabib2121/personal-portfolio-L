@@ -201,6 +201,40 @@
                     </div>
                 </div>
                 <p class="text-center mt-5 wow fadeInUp"><a href="{{route('cv.download',$cv_download->id)}}" class="btn btn-outline-dark shadow-none rounded-0">Download CV</a></p>
+
+                {{-- Project link area --}}
+                <div class="project_link_area">
+                    <h2>Some Of Project</h2>
+
+                    <div class="table-responsive project_link">
+                        <table class="table table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Project Name</th>
+                                    <th scope="col">Project Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse ($someprojectlink_all_data as $someprojectlink_data)
+                                    <tr>
+                                        <td>
+                                            <span class="project_name_style">{{$someprojectlink_data->project_name}} </span>
+                                        </td>
+                                        <td>
+                                            <div class="project_link_style">
+                                                <a href="{{$someprojectlink_data->project_link}}" target="_blank">{{$someprojectlink_data->project_link}}</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                @empty
+                                    <tr class="text-center text-danger">
+                                        <td colspan="50">There are no data to show</td>
+                                    </tr>
+                                @endforelse
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Resume end -->

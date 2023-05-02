@@ -28,6 +28,8 @@
 <link rel="stylesheet" type="text/css" href="{{asset('portfolio-file')}}/vendor/magnific-popup/magnific-popup.min.css" />
 <!-- Custom Stylesheet -->
 <link rel="stylesheet" type="text/css" href="{{asset('portfolio-file')}}/css/stylesheet.css" />
+{{-- custom-style css --}}
+<link rel="stylesheet" type="text/css" href="{{asset('portfolio-file')}}/css/custom-style.css" />
 <!-- Colors Css -->
 <link id="color-switcher" type="text/css" rel="stylesheet" href="#" />
 </head>
